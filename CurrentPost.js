@@ -14,7 +14,7 @@ const CurrentPost = props => {
     return (
       <View style={styles.wrapper}>
         <View style={{flex: 1, justifyContent: 'center'}}>
-          <Text style={{textAlign: 'center'}}>Select a Model</Text>
+          <Text style={{textAlign: 'center'}}>Oracle participates the third time in a row, this year with our partner Zoo Zurich and the experts from Oracle Labs. Our challenge will help to create awareness around the endangered species of penguins.</Text>
         </View>
       </View>
     );
@@ -22,9 +22,9 @@ const CurrentPost = props => {
   const post = props.posts[props.current];
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.name}>{post.name}</Text>
-      <Text style={styles.author}>{post.author}</Text>
-      <Text style={styles.description}>{post.description}</Text>
+      <Text style={styles.name}>SAVE PENGUINS</Text>
+      <Text style={styles.author}>BY ORACLE AND ZOO ZURICH</Text>
+      <Text style={styles.description}>Oracle participates the third time in a row, this year with our partner Zoo Zurich and the experts from Oracle Labs. Our challenge will help to create awareness around the endangered species of penguins.</Text>
     </View>
   );
 };
@@ -32,7 +32,7 @@ const CurrentPost = props => {
 const styles = StyleSheet.create({
   wrapper: {
     width: 300,
-    height: 600,
+    height: 300,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     borderColor: '#303050',
     borderWidth: 2,

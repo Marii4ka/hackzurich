@@ -29,7 +29,7 @@ Store.initialize('AIzaSyAVUaHZ78RArYYuHnaQMhRUEZ8hkTDL6OU');
 const SCENE_DEF = [
   {
     type: 'photo',
-    title: 'Welcome to Antarctica',
+    title: ' ',
     source: asset('antarctica.jpg'),
     audio: asset('penguin.wav'),
     next: 1,
@@ -273,3 +273,7 @@ AppRegistry.registerComponent('MediaAppTemplate', () => MediaAppTemplate);
 // register another root component
 // this will be used from client.js by r360.createRoot('MediaAppTemplate' ...)
 AppRegistry.registerComponent('MediaAppTemplateSubtitle', () => MediaAppTemplateSubtitle);
+
+AppRegistry.registerComponent('TopPosts', () => TopPosts);
+AppRegistry.registerComponent('CurrentPost', () => CurrentPost);
+AppRegistry.registerComponent('ModelView', () => ModelView);

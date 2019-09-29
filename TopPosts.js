@@ -7,7 +7,13 @@ class PostButton extends React.Component {
     hover: false,
   };
 
+  state = {
+    index: 0,
+  };
+
+
   render() {
+  //  const currentScene = SCENE_DEF[this.state.index];
     return (
       <VrButton
         style={styles.postButton}
@@ -43,8 +49,8 @@ const TopPosts = props => {
         <PostButton
           key={post.id}
           index={i}
-          name={post.name}
-          author={post.author}
+          name= 'SAVE PENGUINS'//{post.name}
+          author='BY ORACLE' //{post.author}
           preview={post.preview}
         />
       ))}
@@ -55,7 +61,7 @@ const TopPosts = props => {
 const styles = StyleSheet.create({
   wrapper: {
     width: 300,
-    height: 600,
+    height: 200,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     borderColor: '#303050',
     borderWidth: 2,
