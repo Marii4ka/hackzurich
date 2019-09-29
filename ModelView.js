@@ -14,9 +14,6 @@ const AnimatedEntity = Animated.createAnimatedComponent(Entity);
 class ModelView extends React.Component {
   rotation = new Animated.Value(0);
 
-
-
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.current !== this.props.current) {
       this.rotation.setValue(0);

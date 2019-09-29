@@ -5,9 +5,7 @@ import {connect, setCurrent} from './Store';
 class PostButton extends React.Component {
   state = {
     hover: false,
-
   };
-
 
   render() {
     return (
@@ -57,7 +55,7 @@ const TopPosts = props => {
 const styles = StyleSheet.create({
   wrapper: {
     width: 300,
-    height: 300,
+    height: 600,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     borderColor: '#303050',
     borderWidth: 2,
